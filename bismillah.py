@@ -10,8 +10,8 @@ fp = st.number_input('Masukkan Nilai FP')
 tombol = st.button('Hitung Nilai Normalitas')
 
 if tombol:
-    nilai_normalitas = bobot/(fp*be*volume) 
-    st.success(f'Nilai Normalitas adalah {nilai_normalitas}')
+	nilai_normalitas = bobot/(fp*be*volume) 
+	st.success(f'Nilai Normalitas adalah {nilai_normalitas}')
 
 
 import streamlit as st
@@ -27,8 +27,8 @@ fp = st.number_input("Masukkan Nilai FP")
 tombol = st.button("Hitung Nilai Kadar(%(b/v))")
 
 if tombol:
-    nilai_persentase = volume*normalitas*be*fp*10**-3*100/(volumee) 
-    st.success(f"Nilai Kadar (%(b/v)) adalah {nilai_persentase}")
+	nilai_persentase = volume*normalitas*be*fp*10**-3*100/(volumee) 
+	st.success(f"Nilai Kadar (%(b/v)) adalah {nilai_persentase}")
 	
 	
 import streamlit as st
@@ -44,5 +44,5 @@ fp = st.number_input("Masukkan Nilai FP")
 tombol = st.button("Hitung Nilai Kadar(%(b/b))")
 
 if tombol:
-    nilai_persentase = volume*normalitas*be*fp*10**-3*100/(gram) 
-    st.success(f"Nilai Kadar (%(b/b)) adalah {nilai_persentase}")
+	nilai_persentase = volume*normalitas*be*fp*10**-3*100/(gram) 
+	st.success(f"Nilai Kadar (%(b/b)) adalah {nilai_persentase}")
