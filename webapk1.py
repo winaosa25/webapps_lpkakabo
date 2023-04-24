@@ -23,7 +23,7 @@ volume = st.number_input('Masukan Nilai Volume Titran (mL)')
 be = st.number_input('Masukan nilai BE')
 volumee = st.number_input('Masukan Nilai Volume Titrat (mL)')
 
-tombol = st.button('Hitung Nilai Kadar(%)')
+tombol = st.button('Hitung Nilai Kadar(%(b/v))')
 
 if tombol:
     nilai_persentase = volume*normalitas*be*10^-3*100/(volumee) 
@@ -32,13 +32,13 @@ if tombol:
 	
 st.title('Aplikasi Perhitungan Kadar(%b/b)')
 
-normalitas = st.number_input('Masukan Nilai Normalitas Titran (N)')
-volume = st.number_input('Masukan Nilai Volume Titran (mL)')
-be = st.number_input('Masukan nilai BE')
-gram = st.number_input('Masukan Nilai Gram Contoh (g)')
+normalitass = st.number_input('Masukan Nilai Normalitas Titran (N)')
+volumeee = st.number_input('Masukan Nilai Volume Titran (mL)')
+bee = st.number_input('Masukan nilai BE')
+gramm = st.number_input('Masukan Nilai Gram Contoh (g)')
 
-tombol = st.button('Hitung Nilai Kadar(%)')
+tombol = st.button('Hitung Nilai Kadar(%(b/b))')
 
 if tombol:
-    nilai_persentase = volume*normalitas*be*10^-3*100/(gram) 
+    nilai_persentase = volumeee*normalitass*bee*10^-3*100/(gramm) 
     st.success(f'Nilai Normalitas adalah {nilai_persentase}')
