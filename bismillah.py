@@ -24,9 +24,9 @@ be = st.number_input("Masukan nilai BE")
 volumee = st.number_input("Masukan Nilai Volume Titrat (mL)")
 fp = st.number_input("Masukkan Nilai FP")
 
-tombol = st.button("Hitung Nilai Kadar(%(b/v))")
+menghitung = st.button("Hitung Nilai Kadar(%(b/v))")
 
-if tombol:
+if menghitung:
 	nilai_persentase = volume*normalitas*be*fp*10**-3*100/(volumee) 
 	st.success(f"Nilai Kadar (%(b/v)) adalah {nilai_persentase}")
 	
@@ -41,8 +41,8 @@ be = st.number_input("Masukan nilai BE")
 gram = st.number_input("Masukan Nilai Gram Contoh (g)")
 fp = st.number_input("Masukkan Nilai FP")
 
-tombol = st.button("Hitung Nilai Kadar(%(b/b))")
+hitung = st.button("Hitung Nilai Kadar(%(b/b))")
 
-if tombol:
+if hitung:
 	nilai_persentase = volume*normalitas*be*fp*10**-3*100/(gram) 
 	st.success(f"Nilai Kadar (%(b/b)) adalah {nilai_persentase}")
