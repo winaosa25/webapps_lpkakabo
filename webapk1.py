@@ -26,20 +26,20 @@ volumee = st.number_input('Masukan Nilai Volume Titrat (mL)')
 tombol = st.button('Hitung Nilai Kadar(%(b/v))')
 
 if tombol:
-    nilai_persentase = volume*normalitas*be*10^-3*100/(volumee) 
+    nilai_persentase = volume*normalitas*be*10**-3*100/(volumee) 
     st.success(f'Nilai Normalitas adalah {nilai_persentase}')
 	
-import streamlit as st
+import streamlit as st1
 	
 st.title('Aplikasi Perhitungan Kadar(%b/b)')
 
-normalitas = st.number_input('Masukan Nilai Normalitas Titran (N)')
-volume = st.number_input('Masukan Nilai Volume Titran (mL)')
-be = st.number_input('Masukan nilai BE')
-gram = st.number_input('Masukan Nilai Gram Contoh (g)')
+normalitas = st1.number_input('Masukan Nilai Normalitas Titran (N)')
+volume = st1.number_input('Masukan Nilai Volume Titran (mL)')
+be = st1.number_input('Masukan nilai BE')
+gram = st1.number_input('Masukan Nilai Gram Contoh (g)')
 
 tombol = st.button('Hitung Nilai Kadar(%(b/b))')
 
 if tombol:
-    nilai_persentase = volume*normalitas*be*10^-3*100/(gram) 
+    nilai_persentase = volume*normalitas*be*10**-3*100/(gram) 
     st.success(f'Nilai Normalitas adalah {nilai_persentase}')
