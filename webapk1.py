@@ -40,5 +40,5 @@ gram = st.number_input('Masukan Nilai Gram Contoh (g)')
 tombol = st.button('Hitung Nilai Kadar(%)')
 
 if tombol:
-    nilai_persentase = volume*normalitas*be*(10**-3))*100/(gram) 
+    nilai_persentase = volume*normalitas*be*10^-3*100/(gram) 
     st.success(f'Nilai Normalitas adalah {nilai_persentase}')
