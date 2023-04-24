@@ -26,7 +26,7 @@ volumee = st.number_input('Masukan Nilai Volume Titrat (mL)')
 tombol = st.button('Hitung Nilai Kadar(%)')
 
 if tombol:
-    nilai_persentase = volume*normalitas*be*(10**-3))*100/(volumee) 
+    nilai_persentase = volume*normalitas*be*10^-3*100/(volumee) 
     st.success(f'Nilai Normalitas adalah {nilai_persentase}')
 	
 	
